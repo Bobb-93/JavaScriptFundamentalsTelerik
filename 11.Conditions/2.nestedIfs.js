@@ -10,3 +10,6 @@ if (first === second) {
     console.log('The second number is greater than the first.');
   }
 }
+
+let str = "asa";
+console.log(!str);
