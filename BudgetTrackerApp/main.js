@@ -1,4 +1,4 @@
-let totalIncome =0;
+let totalIncome = 0;
 let totalExpense = 0;
 let balance = 0;
 
