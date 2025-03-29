@@ -9,10 +9,13 @@ for (let i = 1; i <= n; i++) {
 console.log(`factorial: ${factorial}`);
 
 // calculate the sum of powers of 2 up to the boundary
+// let boundary = 256;
 let boundary = 128;
 let sum = 0;
 
 for (let i = 1; i < boundary; i = i * 2) {
+    console.log(`i = ${i}`);
+    
   sum = sum + i;
 }
 
