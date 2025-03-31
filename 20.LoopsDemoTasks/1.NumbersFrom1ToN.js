@@ -9,12 +9,17 @@ let N = +gets();
 
 let result = '';
 
-for (let i = 1; i <= N; i++){
-    if(i === N){
-        result += i;
-        break;
-    }
+// for (let i = 1; i <= N; i++){
+//     if(i === N){
+//         result += i;
+//         break;
+//     }
+//     result += i + ' ';
+// }
+
+for (let i = 1; i < N; i++){
     result += i + ' ';
 }
+result += N;
 
 console.log(result);
