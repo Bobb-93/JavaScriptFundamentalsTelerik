@@ -24,3 +24,8 @@ console.log(`Total Income: $${totalIncome}`);
 console.log(`Total Expenses: $${totalExpense}`);
 console.log(`Balance: $${balance}`);
  
+/*
+Add a feature that allows the user to "delete" the last transaction entered into either
+ the income or expense arrays, mimicking the action of undoing a transaction. This would 
+ involve manipulating array lengths and indexes, giving you hands-on experience with more complex array operations.
+*/
