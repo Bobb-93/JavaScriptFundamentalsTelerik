@@ -16,14 +16,17 @@ let k = 0;
 
 for (let i = 0; i < N; i++) {
     const element = listOne[i];
-    combinedArray.push(element);
+    const element2 = listTwo[i];
 
-    for (let j = 0; j < N; j++) {
-        const innerElement = listTwo[j];
-        if(j===i){
-            combinedArray.push(innerElement);
-        }
-    }
+    combinedArray.push(element);
+    combinedArray.push(element2);
+
+    // for (let j = 0; j < N; j++) {
+    //     const innerElement = listTwo[j];
+    //     if(j===i){
+    //         combinedArray.push(innerElement);
+    //     }
+    // }
 }
 
 let output = combinedArray.join(',');
