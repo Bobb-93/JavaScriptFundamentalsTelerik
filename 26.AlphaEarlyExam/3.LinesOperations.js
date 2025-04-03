@@ -10,7 +10,7 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 let nAndM = gets();
-let myArray = nAndM.split(" ")
+let myArray = nAndM.split(" ");
 
 let N = myArray[0];
 let M = myArray[1];
