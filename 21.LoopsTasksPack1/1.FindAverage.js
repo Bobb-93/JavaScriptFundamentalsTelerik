@@ -14,22 +14,33 @@ let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 let N = +gets();
-let numArray = [];
-
-for (let i = 0; i < N; i++) {
-    const element = +gets();
-    numArray.push(element);
-}
-
 let avgHelper = 0;
 
-for (let j = 0; j < N; j++) {
-    const element = numArray[j];
+for (let i = 0; i < N; i++) {
+    const number = +gets();
     
-    avgHelper += element;
+    avgHelper += number;
 }
 
 let average = avgHelper / N;
 
 console.log(average.toFixed(2));
 
+// let numArray = [];
+
+// for (let i = 0; i < N; i++) {
+//     const element = +gets();
+//     numArray.push(element);
+// }
+
+// let avgHelper = 0;
+
+// for (let j = 0; j < N; j++) {
+//     const element = numArray[j];
+
+//     avgHelper += element;
+// }
+
+// let average = avgHelper / N;
+
+// console.log(average.toFixed(2));
