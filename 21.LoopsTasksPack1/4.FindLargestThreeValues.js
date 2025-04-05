@@ -14,31 +14,31 @@ let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 let N = +gets();
 let ourArray = [];
 
-for (let i = 0; i < N; i++) {
-    ourArray.push(+gets());
-}
+// for (let i = 0; i < N; i++) {
+//     ourArray.push(+gets());
+// }
 
 let largest = -500;
 let secondLargest = -500;
 let thirdLargest = -500;
 
 for (let i = 0; i < N; i++) {
-    const number = ourArray[i];
+    const number = +gets();
     
     if(number >= largest){
         thirdLargest = secondLargest;
         secondLargest = largest;
         largest = number;
-        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+        // print(`${largest}, ${secondLargest} and ${thirdLargest}`);
 
     } else if(number >= secondLargest && number <= largest){
         thirdLargest = secondLargest;
         secondLargest = number;
-        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+        // print(`${largest}, ${secondLargest} and ${thirdLargest}`);
 
     } else if(number >= thirdLargest && number <= secondLargest){
         thirdLargest = number;
-        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+        // print(`${largest}, ${secondLargest} and ${thirdLargest}`);
         
     }
 }
