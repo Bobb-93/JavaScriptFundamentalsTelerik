@@ -29,11 +29,17 @@ for (let i = 0; i < N; i++) {
         thirdLargest = secondLargest;
         secondLargest = largest;
         largest = number;
+        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+
     } else if(number >= secondLargest && number <= largest){
         thirdLargest = secondLargest;
         secondLargest = number;
+        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+
     } else if(number >= thirdLargest && number <= secondLargest){
         thirdLargest = number;
+        print(`${largest}, ${secondLargest} and ${thirdLargest}`);
+        
     }
 }
 
