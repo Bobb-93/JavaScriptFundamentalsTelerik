@@ -19,6 +19,6 @@ for (let i = 0; i < N; i++) {
     let price = parseFloat(gets());
 
     // console.log(Math.round(price * 0.35));
-    console.log((price * 0.35).toFixed(2));
+    print((price * 0.35).toFixed(2));
     
 }
