@@ -12,7 +12,7 @@ let input = [
 let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
-let N = +gets();
+letiN = +gets();
 
 for (let i = 0; i < N; i++) {
 
