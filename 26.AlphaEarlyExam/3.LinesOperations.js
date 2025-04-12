@@ -30,7 +30,7 @@ for (let i = 0; i < N; i++) {
 
     // console.log(`3.tmp array: ${tempArray}`);
 
-    if (3 % i === 0) {
+    if (i % 3 === 0) {
         let min = Infinity;
         for (let j = 0; j < tempArray.length; j++) {
             const element = tempArray[j];
@@ -42,7 +42,7 @@ for (let i = 0; i < N; i++) {
         totalSum += min;
         // console.log(totalSum);
 
-    } else if (3 % i === 1) {
+    } else if (i % 3 === 1) {
         let max = -Infinity;
         for (let j = 0; j < tempArray.length; j++) {
             const element = tempArray[j];
@@ -54,7 +54,7 @@ for (let i = 0; i < N; i++) {
         // console.log(totalSum);
 
 
-    } else if (3 % i === 2) {
+    } else if (i % 3 === 2) {
         let avgHelper = 0;
         for (let j = 0; j < tempArray.length; j++) {
             const element = tempArray[j];
@@ -73,6 +73,3 @@ for (let i = 0; i < N; i++) {
 }
 
 console.log(totalSum);
-
-
-
