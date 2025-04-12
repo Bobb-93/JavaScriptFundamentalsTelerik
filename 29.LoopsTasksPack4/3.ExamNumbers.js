@@ -18,14 +18,15 @@ let sum;
 
 for (let i = x; i <= y; i++) {
     thirdDigit = i % 10;
-    secondDigit = Math.floor( i / 10) % 10;
-    firstDigit = Math.floor( i / 100);
+    secondDigit = Math.floor(i / 10) % 10;
+    firstDigit = Math.floor(i / 100);
 
+    sum = thirdDigit + secondDigit + firstDigit;
     // print(`${i}: ${thirdDigit}`);
     // print(`${i}: ${secondDigit}`);
     // print(`${i}: ${firstDigit}`);
 
-    if(thirdDigit + secondDigit + firstDigit === t){
+    if (sum === t) {
         print(i);
     }
 }
