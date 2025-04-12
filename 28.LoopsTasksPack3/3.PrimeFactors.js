@@ -17,4 +17,3 @@ while (N > 1) {
         divisor++;
     }
 }
-

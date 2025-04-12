@@ -11,9 +11,9 @@ let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 let N = +gets();
 let row = '';
 
-for (let i = 0; i < N; i++) {
-    for (let j = 0; j < N; j++) {
-        row += (i + j + 1) + ' ';
+for (let i = 1; i <= N; i++) {
+    for (let j = i; j < N + i; j++) {
+        row += j + ' ';
         // console.log(`row: ${row}`); 
     }
     console.log(row.trim());
