@@ -16,17 +16,17 @@ let averageSum = 0;
 
 for (let i = 0; i < N; i++) {
     let someWord = gets();
-    let wordNumber = 0;
+    let wordScore = 0;
 
     for (let j = 0; j < someWord.length; j++) {
         let letterCode = someWord.charCodeAt(j);
         // print(`${someWord}: ${someWord.charCodeAt(j)}`);
-        wordNumber += (letterCode - 96);
+        wordScore += (letterCode - 96);
     }
 
-    // console.log(wordNumber);
+    // console.log(wordScore);
     
-    let averageSumNumber = Math.abs(wordNumber - T);
+    let averageSumNumber = Math.abs(wordScore - T);
 
     averageSum += averageSumNumber;
 
