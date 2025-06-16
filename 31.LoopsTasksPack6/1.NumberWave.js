@@ -7,7 +7,7 @@ let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 
 let N = +gets();
 
-let outputArray = [];
+let outputArray = "";
 
 for (let i = 1; i <= N; i++) {
     outputArray += `${i} `;
