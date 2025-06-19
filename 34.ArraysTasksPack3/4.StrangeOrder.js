@@ -14,10 +14,10 @@ let zeroArray = [];
 for (let i = 0; i < array.length; i++) {
     const element = array[i];
 
-    if (element === 0) {
-        zeroArray.push(element);
-    } else if (element < 0) {
+    if (element < 0) {
         negativeArray.push(element);
+    } else if (element == 0) {
+        zeroArray.push(element);
     } else {
         positiveArray.push(element);
     }

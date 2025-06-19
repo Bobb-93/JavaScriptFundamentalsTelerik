@@ -17,7 +17,9 @@ for (let i = 1; i < arrayLength; i++) {
     
     // console.log(element);
     
-    if(!noDuplicatesArray.includes(element)){
+    //indexOf might be faster
+    // if(!noDuplicatesArray.includes(element)){
+    if(noDuplicatesArray.indexOf(element) == -1){
         noDuplicatesArray.push(element);
     }
     prev = element;
