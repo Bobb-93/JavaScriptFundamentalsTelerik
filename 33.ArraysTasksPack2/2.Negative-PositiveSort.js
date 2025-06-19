@@ -14,10 +14,10 @@ let positiveArray = [];
 
 for (let i = 0; i < arrayLength; i++) {
     const element = array[i];
-    
-    if(element < 0){
+
+    if (element < 0) {
         negativeArray.push(element);
-    } else{
+    } else {
         positiveArray.push(element);
     }
 }

@@ -12,5 +12,5 @@ let arrayLength = array.length;
 for (let i = 0; i < arrayLength; i++) {
     const element = array[i];
     
-    print(Math.round(element * (9/5) + 32));
+    print(Math.round(element * 1.8 + 32));
 }
