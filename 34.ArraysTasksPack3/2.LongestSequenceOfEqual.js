@@ -36,7 +36,7 @@ for (let i = 1; i < N; i++) {
             // print(`maximalSequenceLength: ${maximalSequenceLength}`);
         }
     } else {
-        currentMaximalSequenceLength = 1;
+        currentMaximalSequenceLength = 1;//!!!
         prev = element;
     }
     // print(`element: ${element}`);
