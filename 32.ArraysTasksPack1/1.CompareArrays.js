@@ -14,24 +14,24 @@ let firstArray = [];
 let secondArray = [];
 
 for (let i = 0; i < n; i++) {
-    firstArray.push(gets());
+    firstArray.push(+gets());
 }
 
 for (let i = 0; i < n; i++) {
-    secondArray.push(gets());
+    secondArray.push(+gets());
 }
 
 let areEqual = true;
 
 for (let i = 0; i < n; i++) {
-    if(firstArray[i] !== secondArray[i]){
+    if (firstArray[i] !== secondArray[i]) {
         areEqual = false;
         break;
     }
 }
 
-if(areEqual){
+if (areEqual) {
     print("equal");
-} else{
+} else {
     print("not equal");
 }
